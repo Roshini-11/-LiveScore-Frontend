@@ -1,0 +1,303 @@
+
+<div class="btn">
+    <button class="button button-Top col-2" routerLink="/app-recent"><span>Go Back</span></button>
+    <p class="col-8" style="font-size: 30px;">SCOREBOARD</p>
+  </div>
+  <div class="container">
+    <div class="row" *ngFor="let score of scoreList">
+      <div class="col-sm" *ngIf="score.gameStatus=='Ended'">
+        <div class="row1">
+          <div class="col1">
+            <img src="{{score.homeLogo}}" class="img-fluid">
+          <p>Team Name : {{score.homeTeam}}</p> 
+          <p> Score : {{score.homeScore}}</p>
+          <p> Wickets : {{score.homeWickets}}</p>
+          </div>
+          <div class="col2">
+            <table class="table table-striped w-100">
+              <thead>
+                <tr>
+                  <th scope="col">S.NO</th>
+                  <th scope="col">Players</th>
+                  <th scope="col">Score</th>
+                  <!-- <th scope="col">Over</th>
+                  <th scope="col">Wicket</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>{{score.homePlayer1}}</td>
+                  <td>{{score.homePlayer1Score}}</td>
+                  <!-- <td>{{score.homePlayer1Over}}</td>
+                  <td>{{score.homePlayer1Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>{{score.homePlayer2}}</td>
+                  <td>{{score.homePlayer2Score}}</td>
+                  <!-- <td>{{score.homePlayer2Over}}</td>
+                  <td>{{score.homePlayer2Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>{{score.homePlayer3}}</td>
+                  <td>{{score.homePlayer3Score}}</td>
+                  <!-- <td>{{score.homePlayer3Over}}</td>
+                  <td>{{score.homePlayer3Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>{{score.homePlayer4}}</td>
+                  <td>{{score.homePlayer4Score}}</td>
+                  <!-- <td>{{score.homePlayer4Over}}</td>
+                  <td>{{score.homePlayer4Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>{{score.homePlayer5}}</td>
+                  <td>{{score.homePlayer5Score}}</td>
+                  <!-- <td>{{score.homePlayer5Over}}</td>
+                  <td>{{score.homePlayer5Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>{{score.homePlayer6}}</td>
+                  <td>{{score.homePlayer6Score}}</td>
+                  <!-- <td>{{score.homePlayer6Over}}</td>
+                  <td>{{score.homePlayer6Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>{{score.homePlayer7}}</td>
+                  <td>{{score.homePlayer7Score}}</td>
+                  <!-- <td>{{score.homePlayer7Over}}</td>
+                  <td>{{score.homePlayer7Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>{{score.homePlayer8}}</td>
+                  <td>{{score.homePlayer8Score}}</td>
+                  <!-- <td>{{score.homePlayer8Over}}</td>
+                  <td>{{score.homePlayer8Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>{{score.homePlayer9}}</td>
+                  <td>{{score.homePlayer9Score}}</td>
+                  <!-- <td>{{score.homePlayer9Over}}</td>
+                  <td>{{score.homePlayer9Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>{{score.homePlayer10}}</td>
+                  <td>{{score.homePlayer10Score}}</td>
+                  <!-- <td>{{score.homePlayer10Over}}</td>
+                  <td>{{score.homePlayer10Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>{{score.homePlayer11}}</td>
+                  <td>{{score.homePlayer11Score}}</td>
+                  <!-- <td>{{score.homePlayer11Over}}</td>
+                  <td>{{score.homePlayer11Wicket}}</td> -->
+                </tr>
+              </tbody>
+            </table>
+            <h3>BOWLING</h3>
+            <table class="table table-striped w-100">
+              <thead>
+                <tr>
+                  <th scope="col">S.NO</th>
+                  <th scope="col">Players</th>
+                  <!-- <th scope="col">Score</th> -->
+                  <th scope="col">Over</th>
+                  <th scope="col">Wicket</th>
+                </tr>
+              </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>{{score.homePlayer8}}</td>
+                    <!-- <td>{{score.homePlayer8Score}}</td> -->
+                    <td>{{score.homePlayer8Over}}</td>
+                    <td>{{score.homePlayer8Wicket}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>{{score.homePlayer9}}</td>
+                    <!-- <td>{{score.homePlayer9Score}}</td> -->
+                    <td>{{score.homePlayer9Over}}</td>
+                    <td>{{score.homePlayer9Wicket}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>{{score.homePlayer10}}</td>
+                    <!-- <td>{{score.homePlayer10Score}}</td> -->
+                    <td>{{score.homePlayer10Over}}</td>
+                    <td>{{score.homePlayer10Wicket}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>{{score.homePlayer11}}</td>
+                    <!-- <td>{{score.homePlayer11Score}}</td> -->
+                    <td>{{score.homePlayer11Over}}</td>
+                    <td>{{score.homePlayer11Wicket}}</td>
+                  </tr>
+                </tbody>
+           
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row" *ngFor="let score of scoreList">
+      <div class="col-sm" *ngIf="score.gameStatus=='Ended'">
+        <div class="row1">
+          <div class="col1">
+            <img src="{{score.awayLogo}}" class="img-fluid">
+          <p>Team Name : {{score.awayTeam}}</p>
+          <p> Score : {{score.awayScore}}</p>
+          <p> Wickets : {{score.awayWickets}}</p>
+          </div>
+          <div class="col2">
+            <table class="table table-striped w-100">
+              <thead>
+                <tr>
+                  <th scope="col">S.NO</th>
+                  <th scope="col">Players</th>
+                  <th scope="col">Score</th>
+                  <!-- <th scope="col">Over</th>
+                  <th scope="col">Wicket</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>{{score.awayPlayer1}}</td>
+                  <td>{{score.awayPlayer1Score}}</td>
+                  <!-- <td>{{score.awayPlayer1Over}}</td>
+                  <td>{{score.awayPlayer1Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>{{score.awayPlayer2}}</td>
+                  <td>{{score.awayPlayer2Score}}</td>
+                  <!-- <td>{{score.awayPlayer2Over}}</td>
+                  <td>{{score.awayPlayer2Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>{{score.awayPlayer3}}</td>
+                  <td>{{score.awayPlayer3Score}}</td>
+                  <!-- <td>{{score.awayPlayer3Over}}</td>
+                  <td>{{score.awayPlayer3Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>{{score.awayPlayer4}}</td>
+                  <td>{{score.awayPlayer4Score}}</td>
+                  <!-- <td>{{score.awayPlayer4Over}}</td>
+                  <td>{{score.awayPlayer4Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>{{score.awayPlayer5}}</td>
+                  <td>{{score.awayPlayer5Score}}</td>
+                  <!-- <td>{{score.awayPlayer5Over}}</td>
+                  <td>{{score.awayPlayer5Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>{{score.awayPlayer6}}</td>
+                  <td>{{score.awayPlayer6Score}}</td>
+                  <!-- <td>{{score.awayPlayer6Over}}</td>
+                  <td>{{score.awayPlayer6Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>{{score.awayPlayer7}}</td>
+                  <td>{{score.awayPlayer7Score}}</td>
+                  <!-- <td>{{score.awayPlayer7Over}}</td>
+                  <td>{{score.awayPlayer7Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>{{score.awayPlayer8}}</td>
+                  <td>{{score.awayPlayer8Score}}</td>
+                  <!-- <td>{{score.awayPlayer8Over}}</td>
+                  <td>{{score.awayPlayer8Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>{{score.awayPlayer9}}</td>
+                  <td>{{score.awayPlayer9Score}}</td>
+                  <!-- <td>{{score.awayPlayer9Over}}</td>
+                  <td>{{score.awayPlayer9Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>{{score.awayPlayer10}}</td>
+                  <td>{{score.awayPlayer10Score}}</td>
+                  <!-- <td>{{score.awayPlayer10Over}}</td>
+                  <td>{{score.awayPlayer10Wicket}}</td> -->
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>{{score.awayPlayer11}}</td>
+                  <td>{{score.awayPlayer11Score}}</td>
+                  <!-- <td>{{score.awayPlayer11Over}}</td>
+                  <td>{{score.awayPlayer11Wicket}}</td> -->
+                </tr>
+              </tbody>
+            </table>
+            <h3>BOWLING</h3>
+            <table class="table table-striped w-100">
+              <thead>
+                <tr>
+                  <th scope="col">S.NO</th>
+                  <th scope="col">Players</th>
+                  <!-- <th scope="col">Score</th> -->
+                  <th scope="col">Over</th>
+                  <th scope="col">Wicket</th>
+                </tr>
+              </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>{{score.awayPlayer8}}</td>
+                    <!-- <td>{{score.homePlayer8Score}}</td> -->
+                    <td>{{score.awayPlayer8Over}}</td>
+                    <td>{{score.awayPlayer8Wicket}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>{{score.awayPlayer9}}</td>
+                    <!-- <td>{{score.homePlayer9Score}}</td> -->
+                    <td>{{score.awayPlayer9Over}}</td>
+                    <td>{{score.awayPlayer9Wicket}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>{{score.awayPlayer10}}</td>
+                    <!-- <td>{{score.homePlayer10Score}}</td> -->
+                    <td>{{score.awayPlayer10Over}}</td>
+                    <td>{{score.awayPlayer10Wicket}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>{{score.awayPlayer11}}</td>
+                    <!-- <td>{{score.homePlayer11Score}}</td> -->
+                    <td>{{score.awayPlayer11Over}}</td>
+                    <td>{{score.awayPlayer11Wicket}}</td>
+                  </tr>
+                </tbody>
+           
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

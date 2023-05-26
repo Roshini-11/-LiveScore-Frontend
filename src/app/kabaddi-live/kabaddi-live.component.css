@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+}
+.btnn {
+    border-radius: 20px;
+    background-color: rgb(10, 10, 81);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin : 10px;
+    margin-top: 50px;
+    font-weight: bold;
+    border-style: double;
+  }
+  .buttons{
+    margin-left: -30px;
+  }
+  span.live-icon{
+    display: inline-block;
+    position: relative;
+    top: calc(50% - 5px);
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+  }
+  .button{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    width: 100pxx;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  .btn{
+    margin-left: 150px;
+    border: none;
+  }
+  .containerr{
+    margin-top: 100px;
+    margin-left: 200px;
+    /* background-color: rgb(25, 25, 30); */
+    width : 60%;
+    /* color: white; */
+    font-weight: bold;
+    border: 1px solid black;
+}
+img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}

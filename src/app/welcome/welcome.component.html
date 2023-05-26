@@ -1,0 +1,19 @@
+<section>
+    <div class="container">
+        <div class="buttons">
+            <button class="btnn bg-transparent col-2" routerLink="">Home</button>
+            <button class="btnn bg-transparent col-2" routerLink="/app-welcome" style="color: yellow;">Cricket</button>
+            <!-- <button class="btnn bg-transparent col-2">Football</button> -->
+            <button class="btnn bg-transparent col-2" routerLink="/app-kabaddi">Kabbadi</button>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center p-5">
+        <!-- <div class="btn">
+            <button class="button button-Top" routerLink="/app-welcome"><span>View Teams</span></button>
+        </div> -->
+        <div class="btn">
+            <button class="button" routerLink="/app-live" (click)="loader()"><span>Live Match</span></button>
+            <button class="button" routerLink="/app-recent"><span>Recent Matches</span></button>
+        </div>
+    </div>
+</section>

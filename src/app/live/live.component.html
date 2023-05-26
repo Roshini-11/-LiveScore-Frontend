@@ -1,0 +1,33 @@
+<!-- <html>
+    <head>
+        <meta http-equiv="refresh" content="10">
+    </head>
+</html> -->
+<div class="btn">
+  <a href="#" class="btn btn_live">Live<span class="live-icon"></span></a>
+  <button class="button button-Top" routerLink="/app-welcome"><span>Go Back</span></button>
+</div>
+<div class="container">
+  <div class="row" *ngFor="let score of scoreList">
+    <div class="col-sm" *ngIf="score.gameStatus=='Live'">
+      <img src="{{score.homeLogo}}" class="img-fluid w-10 h-10">
+      <p>Player : {{score.homePlayer1}}(Bating)</p>
+      <p>Team Name : {{score.homeTeam}}</p>
+      <p>Score : {{score.homeScore}}</p>
+      <P>Wickets : {{score.homeWickets}}</P>
+      <p>Overs : {{score.homeOver}}</p>
+      <p>Game Status : {{score.gameStatus}}</p>    </div>
+    <div class="col-sm" *ngIf="score.gameStatus=='Live'">
+      <img src="../../assets/vs.jpg" class="col-4 mx-auto img-Top" alt="">
+    </div>
+    <div class="col-sm" *ngIf="score.gameStatus=='Live'">
+      <img src="{{score.awayLogo}}" class="img-fluid w-10 h-10">
+      <p>Player : {{score.awayPlayer1}} (Bowling)</p>
+      <p>Team Name : {{score.awayTeam}}</p>
+      <p>Score : {{score.awayScore}}</p>
+      <P>Wickets : {{score.awayWickets}}</P>
+      <p>Overs : {{score.awayOver}}</p>
+      <p>Game Status : {{score.gameStatus}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<!-- <html>
+    <head>
+        <meta http-equiv="refresh" content="10">
+    </head>
+</html> -->
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button class="btnn col-2 " routerLink="">Home</button>
+            <button class="btnn col-2" routerLink="/app-welcome">Cricket</button>
+            <button class="btnn col-2" routerLink="/app-kabaddi" style="background-color: red;">Kabbadi</button>
+        </div>
+        <div class="btn">
+            <a href="#" class="btn btn_live">Live<span class="live-icon"></span></a>
+            <button class="button button-Top" routerLink="/app-kabaddi"><span>Go Back</span></button>
+        </div>
+    </div>
+    <div class="containerr">
+        <div class="row" *ngFor="let score of scoreList">
+          <div class="col-sm" *ngIf="score.gameStatus=='Live'">
+            <p>Team Name : {{score.homeTeam}}</p>
+            <p>Score : {{score.homeScore}}</p>
+            <p>Game Status : {{score.gameStatus}}</p>    </div>
+            <div class="col-sm" *ngIf="score.gameStatus=='Live'">
+              <img src="../../assets/vs.jpg" class="col-4 mx-auto img-Top" alt="">
+            </div>
+            <div class="col-sm" *ngIf="score.gameStatus=='Live'">
+              <p>Team Name : {{score.awayTeam}}</p>
+              <p>Score : {{score.awayScore}}</p>
+              <p>game Status : {{score.gameStatus}}</p>
+            </div>
+        </div>
+      </div>
+ </body>

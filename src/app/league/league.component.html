@@ -1,0 +1,34 @@
+
+<div class="btn">
+    <button class="button button-Top col-2" routerLink="/app-kabaddi"><span>Go Back</span></button>
+    <p class="col-8" style="font-size: 30px;">League Table</p>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col2">
+            <table class="table table-striped w-100">
+              <thead>
+                <tr>
+                  <th scope="col">S.NO</th>
+                  <th scope="col">Team</th>
+                  <th scope="col">Played</th>
+                  <th scope="col">Won</th>
+                  <th scope="col">Lost</th>
+                  <th scope="col">Tied</th>
+                  <th scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let score of scoreList">
+                <td>{{score.teamRank}}</td>
+                <td>{{score.teamName}}</td>
+                <td>{{score.played}}</td>
+                <td >{{score.won}}</td>
+                <td >{{score.lost}}</td>
+                <td >{{score.tied}}</td>
+                <td>{{score.points}}</td>
+                </tr>
+              </tbody>
+              </table>
+    </div>
+  </div>

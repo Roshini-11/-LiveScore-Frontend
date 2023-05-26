@@ -1,0 +1,43 @@
+
+<div class="btn">
+    <button class="button button-Top col-2" routerLink="/app-recent"><span>Go Back</span></button>
+    <p class="col-8" style="font-size: 30px;">Recent matches</p>
+  </div>
+  <div class="container">
+    <div class="row" *ngFor="let score of scoreList">
+      <div class="col-sm" *ngIf="score.status=='Ended'">
+        <p>Team ID : {{score.id}}</p>
+        <p>Team Name : {{score.homeTeam}}</p>
+        <p>Player : {{score.homePlayer1}}</p>
+        <p>Player : {{score.homePlayer2}}</p>
+        <p>Player : {{score.homePlayer3}}</p>
+        <p>Player : {{score.homePlayer4}}</p>
+        <p>Player : {{score.homePlayer5}}</p>
+        <p>Player : {{score.homePlayer6}}</p>
+        <p>Player : {{score.homePlayer7}}</p>
+        <p>Player : {{score.homePlayer8}}</p>
+        <p>Player : {{score.homePlayer9}}</p>
+        <p>Player : {{score.homePlayer10}}</p>
+        <p>Player : {{score.homePlayer11}}</p>
+    </div>
+      <div class="col-sm" *ngIf="score.status=='Ended'">
+        <img src="../../assets/vs.jpg" class="vs" alt="">
+      </div>
+      <div class="col-sm" *ngIf="score.status=='Ended'">
+        <p>Team ID : {{score.id}}</p>
+        <p>Team Name : {{score.awayTeam}}</p>
+        <p>Player : {{score.awayPlayer1}}</p>
+        <p>Player : {{score.awayPlayer2}}</p>
+        <p>Player : {{score.awayPlayer3}}</p>
+        <p>Player : {{score.awayPlayer4}}</p>
+        <p>Player : {{score.awayPlayer5}}</p>
+        <p>Player : {{score.awayPlayer6}}</p>
+        <p>Player : {{score.awayPlayer7}}</p>
+        <p>Player : {{score.awayPlayer8}}</p>
+        <p>Player : {{score.awayPlayer9}}</p>
+        <p>Player : {{score.awayPlayer10}}</p>
+        <p>Player : {{score.awayPlayer11}}</p>
+      </div>
+    </div>
+  </div>
+  

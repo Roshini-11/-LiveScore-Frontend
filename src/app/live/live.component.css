@@ -1,0 +1,61 @@
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.card{
+    float: left;
+    height: 500px;
+    border: 0 solid white;
+  }
+.container{
+    margin-top: 20px;
+    margin-left: 110px;
+}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    width: 100pxx;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+  }
+span.live-icon{
+    display: inline-block;
+    position: relative;
+    top: calc(50% - 5px);
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+    animation: animate 1.2s linear infinite;
+  }
+.btn{
+    font-weight : bold;
+    border: none;
+}
+p{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+@keyframes animate {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+  }
+}
